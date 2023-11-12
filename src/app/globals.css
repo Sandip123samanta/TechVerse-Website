@@ -2,54 +2,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
 @import url("https://pham.codes/d/GeistMonoVF.woff2");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@property --rotate {
+	syntax: "<angle>";
+	initial-value: 132deg;
+	inherits: false;
+}
+
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 
-
-  --bg-gradient-color: rgb(168, 192, 255);
+	--bg-gradient-color: rgb(108, 75, 205);
 	--bg-gradient-redical: radial-gradient(
 		circle,
-		rgba(168, 192, 255, 1) 0%,
-		rgba(63, 43, 150, 1) 100%
+		rgba(108, 75, 205, 1) 0%,
+		rgba(57, 29, 139, 1) 100%
 	);
 	--bg-gradient-linear-down: linear-gradient(
 		0deg,
-		rgba(168, 192, 255, 1) 0%,
-		rgba(63, 43, 150, 1) 100%
+		rgba(108, 75, 205, 1) 0%,
+		rgba(57, 29, 139, 1) 100%
 	);
 	--bg-gradient-linear-up: linear-gradient(
 		180deg,
-		rgba(168, 192, 255, 1) 0%,
-		rgba(63, 43, 150, 1) 100%
+		rgba(108, 75, 205, 1) 0%,
+		rgba(57, 29, 139, 1) 100%
 	);
+
+
+	--card-width: calc(var(--card-height) / 1.5);
+	--card-height: 65vh;
+
+
+	--hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
+	--returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+	-webkit-box-sizing: border-box;
+		    box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
 }
-
-
 
 /** Hero Text Animation  **/
 

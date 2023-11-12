@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export default function CountDown() {
 	const [endTime, setEndTime] = useState(false);
 	useEffect(() => {
-		const targetDate = new Date("2023-11-10T00:00:00"); // Replace with your desired date and time
+		const targetDate = new Date("2023-11-12T00:00:00"); // Replace with your desired date and time
 		const countToDate = targetDate.getTime();
 		let previousTimeBetweenDates;
 

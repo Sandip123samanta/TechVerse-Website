@@ -4,8 +4,10 @@ import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
 import StarsCanvas from '@/components/starbackground/StarBackground'
 import TimerSection from '@/components/timersection';
-import AboutSection from '@/components/aboutsection';
 import HeroText from '@/components/blackhole';
+import HorizontalScrollSection from '@/components/eventsection';
+import EventCard from '@/components/eventsection/eventcard/EventCard';
+import AboutSection from '@/components/aboutsection';
 
 export default function Home() {
   
@@ -26,6 +28,8 @@ export default function Home() {
         <HeroText/>
         <TimerSection/>
         <AboutSection/>
+        <HorizontalScrollSection/>
+        <TimerSection/>
       </div>  
     </main>
   )
