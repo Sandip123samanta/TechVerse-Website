@@ -1,0 +1,17 @@
+.main{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main img{
+    height: 100%;
+}
+
+/* @media screen and (max-width: 600px){
+    .main{
+        height: 60vh;
+    }
+} */

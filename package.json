@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.0.1",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.88.12",
     "@react-three/fiber": "^8.15.10",
     "@react-three/postprocessing": "^2.15.10",
@@ -22,12 +22,17 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
     "framer-motion": "^10.16.4",
+    "framer-motion-3d": "^10.16.4",
     "gsap": "^3.12.2",
     "guify": "^0.15.1",
     "leva": "^0.9.35",
+    "locomotive-scroll": "^5.0.0-beta.8",
+    "next": "^14.0.3",
     "postcss": "^8",
+    "raw-loader": "^4.0.2",
     "react-intersection-observer": "^9.5.2",
     "sass": "^1.69.5",
+    "split-type": "^0.3.4",
     "tailwindcss": "^3.3.0",
     "three": "^0.158.0"
   }

@@ -1,0 +1,57 @@
+.intro{
+    position: relative;
+    margin: 0;
+}
+
+.backgroundImage{
+    position: absolute;
+    height: 150vh;
+    width: 100vw;
+    top: 0;
+    filter: brightness(50%);
+    margin: 0;
+}
+
+.backgroundImage img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.introContainer{
+    padding-top: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introContainer h1{
+    z-index: 3;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.introImage{
+    position: absolute;
+    width: 20vw;
+    height: 30vw;
+    filter: brightness(70%);
+}
+
+.introImage img{
+    object-fit: cover;
+    object-position: top;
+}
+
+@media screen and (max-width: 600px){
+    .backgroundImage{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .introContainer{
+        padding-top: 50vw;
+    }
+}

@@ -1,0 +1,16 @@
+.background-music{
+    width: 3vw;
+    height: 3vw;
+}
+
+@media screen and (max-width: 600px){
+    
+    .background-music{
+        left: 1rem;
+
+        .music{
+            width: 5vw;
+            height: 5vw;
+        }
+    }
+}

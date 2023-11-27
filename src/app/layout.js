@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Header from '../components/navbar'
+import Header from '../components/common/navbar'
+import Footer from '@/components/common/footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} bg-[#030014] overflow-x-hidden`}>
         <Header/>
           {children}
+        <Footer />
       </body>
     </html>
   )
