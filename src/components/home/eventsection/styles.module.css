@@ -1,0 +1,46 @@
+.body {
+	margin:0;
+	background:#15151e;
+	overflow-x:hidden;
+}
+
+.races {
+	width:fit-content;
+	display:flex;
+	flex-wrap:nowrap;
+}
+
+.races h2 {
+	font-family: 'Staatliches', cursive;
+	font-size:30vw;
+	flex-shrink:0;
+	padding-right:0.3em;
+	padding-left:0.3em;
+	color:#e10600;
+	
+	margin:0;	
+}
+
+.races h2:last-of-type {
+	background:#e1e1ff;
+}
+
+.lightBG {
+	background:#313143;
+}
+
+.space-20vh {
+	height:20vh;
+}
+
+.space-30vh {
+	height:30vh;
+}
+
+.space-50vh {
+	height:50vh;
+}
+
+.space-100vh {
+	height:100vh;
+}

@@ -5,7 +5,7 @@ import { useScroll } from 'framer-motion';
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
 import { motion } from 'framer-motion-3d';
 
-export default function earth() {
+export default function Earth() {
 
     const scene = useRef(null);
     const { scrollYProgress } = useScroll({

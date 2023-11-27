@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 function GlowBtn() {
   return (
-    <div class="container">
-        <Link class="btn" href="#">
-            <span class="btnInner text-[2vw]">Register Now</span>
+    <div className="container">
+        <Link className="btn" href="#">
+            <span className="btnInner text-[2vw]">Register Now</span>
         </Link>
     </div>
   )

@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { ToastContainer, toast } from "react-toastify";
-import StarsCanvas from "@/components/common/starbackground/StarBackground";
+import { toast } from "react-toastify";
+// import StarsCanvas from "@/components/common/starbackground/StarBackground";
 import Contact from "../../eventDetails/Contact";
 
 const page = () => {
@@ -104,7 +104,7 @@ const page = () => {
 
 	return (
 		<div className="h-screen w-screen md:h-auto md:flex gap-20 justify-center items-center font-robot md:mt-24">
-			<StarsCanvas />
+			{/* <StarsCanvas /> */}
 			<Contact
 				params={contactDetails}
 				rules={rules}

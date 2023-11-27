@@ -1,7 +1,7 @@
 .card {
 	width: 20vw;
 	height: 30vw;
-	position: relative;
+	/* position: relative; */
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -9,16 +9,16 @@
 	perspective: 2500px;
 	margin: 0 50px;
 }
-  
+
 .cover_image {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 }
-  
-.card:hover .cover_image{
-	opacity: .5;
+
+.card:hover .cover_image {
+	opacity: 0.5;
 }
 .wrapper {
 	transition: all 0.5s;
@@ -27,16 +27,16 @@
 	height: 100%;
 	z-index: -1;
 }
-  
-  .card:hover .wrapper {
+
+.card:hover .wrapper {
 	transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
 	box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-  }
-  
-  .wrapper::before,
-  .wrapper::after {
+}
+
+.wrapper::before,
+.wrapper::after {
 	content: "";
 	opacity: 0;
 	width: 100%;
@@ -44,69 +44,69 @@
 	transition: all 0.5s;
 	position: absolute;
 	left: 0;
-  }
-  .wrapper::before {
+}
+.wrapper::before {
 	top: 0;
 	height: 100%;
 	background-image: linear-gradient(
-	  to top,
-	  transparent 46%,
-	  rgba(12, 13, 19, 0.5) 68%,
-	  rgba(12, 13, 19) 97%
+		to top,
+		transparent 46%,
+		rgba(12, 13, 19, 0.5) 68%,
+		rgba(12, 13, 19) 97%
 	);
-  }
-  .wrapper::after {
+}
+.wrapper::after {
 	bottom: 0;
 	opacity: 1;
 	background-image: linear-gradient(
-	  to bottom,
-	  transparent 46%,
-	  rgba(12, 13, 19, 0.5) 68%,
-	  rgba(12, 13, 19) 97%
+		to bottom,
+		transparent 46%,
+		rgba(12, 13, 19, 0.5) 68%,
+		rgba(12, 13, 19) 97%
 	);
-  }
-  
-  .card:hover .wrapper::before,
-  .wrapper::after {
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
 	opacity: 0;
-  }
-  
-  .card:hover .wrapper::after {
+}
+
+.card:hover .wrapper::after {
 	height: 120px;
-  }
-  .title {
+}
+.title {
 	width: 100%;
 	transition: transform 0.5s;
 	text-align: center;
-  }
+}
 
-  .title h1{
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.title h1 {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: bold;
 	font-size: 3vw;
 	background-image: linear-gradient(
 		to right,
 		#462523 0,
-			   #cb9b51 22%, 
+		#cb9b51 22%,
 		#f6e27a 45%,
 		#f6f2c0 50%,
 		#f6e27a 55%,
 		#cb9b51 78%,
 		#462523 100%
-		);
-	color:transparent;
-	background-clip:text;
-  }
-  .title p{
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	);
+	color: transparent;
+	background-clip: text;
+}
+.title p {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 1.5vw;
 	color: white;
-  }
-  .card:hover .title {
+}
+.card:hover .title {
 	transform: translate3d(0%, -50px, 100px);
-  }
-  
-  .character {
+}
+
+.character {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -114,24 +114,23 @@
 	transition: all 0.5s;
 	position: absolute;
 	z-index: -1;
-  }
-  
-  .card:hover .character {
+}
+
+.card:hover .character {
 	opacity: 1;
 	transform: translate3d(0%, -30%, 100px);
-  }
+}
 
-
-@media screen and (max-width: 600px){
-	.card{
+@media screen and (max-width: 600px) {
+	.card {
 		width: 55vw;
 		height: 80vw;
 	}
 
-	.title h1{
+	.title h1 {
 		font-size: 7vw;
 	}
-	.title p{
+	.title p {
 		font-size: 3vw;
 	}
 }

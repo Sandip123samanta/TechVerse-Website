@@ -35,14 +35,14 @@ const DepthOfFieldGallery = () => {
   return (
     <div className="depth-of-field">
       <div id="photos">
-        <Image src={floating1} />
-        <Image src={floating2} />
-        <Image src={floating3} />
-        <Image src={floating4}/>
-        <Image src={floating5}/>
-        <Image src={floating6}/>
-        <Image src={floating7}/>
-        <Image src={floating8}/>
+        <Image src={floating1} alt='gallaryImage'/>
+        <Image src={floating2} alt='gallaryImage'/>
+        <Image src={floating3} alt='gallaryImage'/>
+        <Image src={floating4} alt='gallaryImage'/>
+        <Image src={floating5} alt='gallaryImage'/>
+        <Image src={floating6} alt='gallaryImage'/>
+        <Image src={floating7} alt='gallaryImage'/>
+        <Image src={floating8} alt='gallaryImage'/>
         
       </div>
     </div>

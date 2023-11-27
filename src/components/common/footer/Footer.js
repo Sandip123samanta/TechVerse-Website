@@ -14,7 +14,7 @@ function Footer() {
         <div className='w-[90vw] h-[70vh] flex flex-col mt-[2vw] items-center justify-center'>
             <div className={`${styles.logoContainer} w-full h-auto flex flex-row justify-center gap-[5vw]`}>
                 <div className={styles.logo}>
-                    <Image src={Logo}/>
+                    <Image src={Logo} alt="igm"/>
                 </div>
                 <div className={styles.venue}>
                     <h1 className='text-gray-500 font-young text-[2vw]'>VENUE LOCATION</h1>
@@ -26,17 +26,17 @@ function Footer() {
                     <h3 className='text-[1.2vw]'>Keep an eye on our hotdrops</h3>
                     <div className='relative w-full h-auto flex gap-0'>
                         <Link className='w-1/5' href='#'>
-                            <Image className='object-cover w-full' src={Facebook} />
+                            <Image className='object-cover w-full' src={Facebook}  alt="igm"/>
                         </Link>
                         <Link className='w-1/5' href='#'>
-                            <Image className='object-cover w-full' src={Instagram} />
+                            <Image className='object-cover w-full' src={Instagram}  alt="igm"/>
                         </Link>      
                     </div>
                     <div className={`${styles.sponser} relative w-full h-auto`}>
                         <h1 className='text-gray-500 font-young text-[2vw] mt-[2vw]'>Our sponsers</h1>
                         <div className='relative w-full flex items-center gap-3'>
-                            <Image src={GNIT} className='object-cover w-2/5'/>
-                            <Image src={JIS} className='object-cover w-1/5 h-fit'/>
+                            <Image src={GNIT} className='object-cover w-2/5' alt="igm"/>
+                            <Image src={JIS} className='object-cover w-1/5 h-fit' alt="igm"/>
                         </div>    
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import './style.css'
 
-const withTransition = (OriginalComponent) => {
+const WithTransition = (OriginalComponent) => {
   return () => (
     <>
       <OriginalComponent />
@@ -23,4 +23,4 @@ const withTransition = (OriginalComponent) => {
   );
 };
 
-export default withTransition;
+export default WithTransition;

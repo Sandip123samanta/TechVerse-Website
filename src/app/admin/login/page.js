@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
-import StarsCanvas from "@/components/common/starbackground/StarBackground";
+// import StarsCanvas from "@/components/common/starbackground/StarBackground";
 
 const page = () => {
 	const router = useRouter();
@@ -49,7 +49,7 @@ const page = () => {
 
 	return (
 		<div className="h-screen w-screen">
-			<StarsCanvas/>
+			{/* <StarsCanvas/> */}
 			<div className="flex justify-center items-center">
 				<div className="bg-gradient-to-b from-indigo-600 p-8 rounded shadow-md w-96 mt-72 md:mt-52">
 					<h1 className="text-4xl font-bold mb-4 text-center">

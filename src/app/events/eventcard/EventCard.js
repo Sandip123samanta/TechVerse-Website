@@ -8,7 +8,7 @@ const EventCard = ({ imgUrl, eventName, details }) => {
 			<div className={styles.cols}>
 				<div
 					className={styles.col}
-					ontouchstart="this.classList.toggle('hover');"
+					// onTouchStart="this.classList.toggle('hover');"
 				>
 					<div className={styles.container}>
 						<div className={styles.front}>
@@ -18,7 +18,7 @@ const EventCard = ({ imgUrl, eventName, details }) => {
 									width={1200}
 									height={900}
 									className="rounded-lg"
-									alt="Event Image"
+									alt="EventImage"
 								/>
 								<div className={styles.overlayText}>
 									<h1 className="text-2xl font-lora font-extrabold text-white">

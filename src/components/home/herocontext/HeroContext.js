@@ -1,6 +1,7 @@
 import React from "react";
 import './style.css'
-import GlowBtn from "@/components/common/Buttons/glowbtn/glowBtn";
+import Image from "next/image"
+import GlowBtn from "@/components/common/Buttons/glowbtn/GlowBtn";
 
 import {
 	slideInFromLeft,
@@ -48,7 +49,7 @@ const HeroContext = () => {
             >
                 <div className="w-full font-sarif font-bold flex items-center justify-center gap-2 text-purple-500">
                     <div className="calendar">
-                        <img src="calendar.png"/>
+                       <Image src="/calendar.png" width={100} height={100} alt="calenderImg" />
                     </div>
                     20-21 JANUARY, 2024
                 </div>

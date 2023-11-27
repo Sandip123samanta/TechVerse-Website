@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import axios from "axios";
-import StarsCanvas from "@/components/common/starbackground/StarBackground";
+// import StarsCanvas from "@/components/common/starbackground/StarBackground";
 import Contact from "../../eventDetails/Contact";
 
 const page = () => {

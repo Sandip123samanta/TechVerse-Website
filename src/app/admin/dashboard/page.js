@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import axios from "axios";
 import * as XLSX from "xlsx";
-import StarsCanvas from "@/components/common/starbackground/StarBackground";
+// import StarsCanvas from "@/components/common/starbackground/StarBackground";
 
 const Dashboard = () => {
 	const [registrations, setRegistrations] = useState([]);
@@ -99,7 +99,7 @@ const Dashboard = () => {
 
 	return (
 		<div className="container h-screen w-screen font-roboto text-white">
-			<StarsCanvas/>
+			{/* <StarsCanvas/> */}
 			<h1 className="text-white mt-20 flex justify-center items-center text-4xl md:text-6xl font-extrabold font-roboto mb-4">
 				Admin Dashboard
 			</h1>

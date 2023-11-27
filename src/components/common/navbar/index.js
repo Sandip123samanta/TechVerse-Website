@@ -6,13 +6,13 @@ import Nav from './nav';
 import { AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import GalaxyBtn from '../Buttons/galaxyButton/galaxyBtn';
 import logo from '../../../../public/logo2.png'
 import {
 	slideInFromLeft,
 	slideInFromRight,
 	slideInFromTop,
 } from "../../utils/motion";
+import GalaxyBtn from '../Buttons/galaxyButton/GalaxyBtn';
 
 function Home() {
     const [isActive,setIsActive]=useState(false)
@@ -35,7 +35,7 @@ function Home() {
             </div>
             {/* <div className='w-[20vw] h-full flex items-center justify-end gap-5'>
                 <div className='h-full z-10'>
-                    <GalaxyBtn/>
+                   <GalaxyBtn/>
                 </div>
                 <div className={styles.header}>
                 <div onClick={()=>{setIsActive(!isActive)}} className={styles.button}>

@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import html2canvas from "html2canvas";
 import axios from "axios";
-import StarsCanvas from "@/components/common/starbackground/StarBackground";
+// import StarsCanvas from "@/components/common/starbackground/StarBackground";
 
 const EventTicket = ({ params }) => {
 	const [data, setData] = useState();
@@ -37,7 +37,7 @@ const EventTicket = ({ params }) => {
 
 	return (
 		<div className=" h-screen w-screen flex justify-center items-center">
-			<StarsCanvas/>
+			{/* <StarsCanvas/> */}
 			<div>
 				<div
 					ref={cardRef}
