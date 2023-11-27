@@ -3,10 +3,10 @@ import React from "react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 // import StarsCanvas from "@/components/common/starbackground/StarBackground";
 
-const page = () => {
+const LogIn = () => {
 	const router = useRouter();
 	const [formData, setFormData] = useState({
 		userName: "",
@@ -103,4 +103,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default LogIn;

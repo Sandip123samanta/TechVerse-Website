@@ -7,7 +7,7 @@ import axios from "axios";
 // import StarsCanvas from "@/components/common/starbackground/StarBackground";
 import Contact from "../../eventDetails/Contact";
 
-const page = () => {
+const Page = () => {
 	const router = useRouter();
 	const [file, setFile] = useState(null);
 	const [formData, setFormData] = useState({
@@ -131,7 +131,7 @@ const page = () => {
 
 	return (
 		<div className="h-screen w-screen md:h-auto md:flex gap-20 justify-center items-center md:mt-24">
-			<StarsCanvas />
+			{/* <StarsCanvas /> */}
 			<Contact
 				params={contactDetails}
 				rules={rules}
@@ -276,6 +276,7 @@ const page = () => {
 								src="/qr_code.jpeg"
 								width={200}
 								height={200}
+								alt="qrcode"
 							/>
 							<h1>
 								UPI ID:{" "}
@@ -312,4 +313,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;

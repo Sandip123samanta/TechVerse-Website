@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser'
 // import StarsCanvas from '@/components/common/starbackground/StarBackground';
 // import CustomCursor from '@/components/common/customCursor/CustomCursor';
 
-function page() {
+function Page() {
   const emailServiceId = 'service_mwwmqmb'
   const emailTemplateId = 'template_2q2o1yo'
   const emailApiKey = 'dW6gxDKu4y1I_tBaxViBb'
@@ -162,4 +162,4 @@ function page() {
   )
 }
 
-export default page;
+export default Page;

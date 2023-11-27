@@ -83,6 +83,7 @@ const Contact = ({ params, rules,imgUrl }) => {
 									src="/phone.png"
 									width={25}
 									height={20}
+									alt="phone log"
 								/>
 								<h1 className="font-light">
 									{params.headPhoneNo}
@@ -93,6 +94,7 @@ const Contact = ({ params, rules,imgUrl }) => {
 									src="/gmail.png"
 									width={25}
 									height={20}
+									alt="gmail logo"
 								/>
 								<h1 className="font-light">
 									{params.headEmailId}
@@ -108,6 +110,7 @@ const Contact = ({ params, rules,imgUrl }) => {
 									src="/phone.png"
 									width={25}
 									height={20}
+									alt="phone logo"
 								/>
 								<h1 className="font-light">
 									{params.coHeadPhoneNo}
@@ -118,6 +121,7 @@ const Contact = ({ params, rules,imgUrl }) => {
 									src="/gmail.png"
 									width={25}
 									height={20}
+									alt="gmail logo"
 								/>
 								<h1 className="font-light">
 									{params.coHeadEmailId}

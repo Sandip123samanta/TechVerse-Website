@@ -16,7 +16,7 @@ function index() {
         <div className='lg:max-w-[60vw] max-w-[80vw] flex flex-col justify-center items-center'>
             <p className="subtitle text-white text-[4vw] lg:text-[2vw] text-center">
             Feeling hyped? We ALL Are! Bask in this exuberant aura, let the electrifying vibe zing you from head to toe!
-            Come on now, RUSH & TAKE PART! You're just a CLICK away!
+            Come on now, RUSH & TAKE PART! You&apos;re just a CLICK away!
             </p>
         </div>
         {/* <GlowBtn/> */}

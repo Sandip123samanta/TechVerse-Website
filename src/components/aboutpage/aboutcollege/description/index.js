@@ -5,7 +5,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useRef,useLayoutEffect,useEffect } from 'react'
 
-function index() {
+function Index() {
 
     const phrases = "Guru Nanak Institute of Technology is a top engineering college in Kolkata.The vision of the college is to entrust the endeavoring professionals with the technical knowledge and professional mastery under the aegis of JIS group, in the year 2003 The technical campus offers undergraduate and postgraduate courses in various fields of engineering.This institute is approved by AICTE, affiliated to West Bengal University of Technology and accredited by UGC, NAAC. It has 'A+' NAAC grade.To amplify teaching and learning in more competent approach, the institute nurtures creative minds,innovations in every technological fields and research initiatives."
 
@@ -60,4 +60,4 @@ function index() {
   )
 }
 
-export default index
+export default Index

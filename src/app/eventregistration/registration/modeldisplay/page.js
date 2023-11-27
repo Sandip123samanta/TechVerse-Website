@@ -7,7 +7,7 @@ import axios from "axios";
 // import StarsCanvas from "@/components/common/starbackground/StarBackground";
 import Contact from "../../eventDetails/Contact";
 
-const ModelDisplay = () => {
+const Page = () => {
 	const router = useRouter();
 	const [file, setFile] = useState(null);
 	const [formData, setFormData] = useState({
@@ -246,6 +246,7 @@ const ModelDisplay = () => {
 								src="/qr_code.jpeg"
 								width={200}
 								height={200}
+								alt="qrcode"
 							/>
 							<h1>
 								UPI ID:{" "}
@@ -282,4 +283,4 @@ const ModelDisplay = () => {
 	);
 };
 
-export default ModelDisplay;
+export default Page;

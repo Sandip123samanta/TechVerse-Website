@@ -6,7 +6,7 @@ import { useLayoutEffect,useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-function index() {
+function Index() {
     const container = useRef(null)
     const backgroundImage = useRef(null)
     const introImage = useRef(null)
@@ -55,4 +55,4 @@ function index() {
   )
 }
 
-export default index
+export default Index

@@ -7,7 +7,7 @@ import axios from "axios";
 // import StarsCanvas from "@/components/common/starbackground/StarBackground";
 import Contact from "../../eventDetails/Contact";
 
-const page = () => {
+const Page = () => {
 	const router = useRouter();
 	const [file, setFile] = useState(null);
 	const [formData, setFormData] = useState({
@@ -96,7 +96,7 @@ const page = () => {
 			<div className="flex items-center justify-center text-black font-roboto">
 				<div className="bg-white p-8 rounded shadow-md w-[30rem]">
 					<h1 className="text-3xl font-semibold text-center mb-4">
-						Bishop's Battle
+						Bishop&apos;s Battle
 					</h1>
 					<form onSubmit={handleForm}>
 						<div className="mb-4">
@@ -153,13 +153,14 @@ const page = () => {
 							</div>
 						</div>
 						<h1 className="text-red-600">
-							* BISHOP'S BATTLE : 50/- (Per head)
+							* BISHOP&apos;S BATTLE : 50/- (Per head)
 						</h1>
 						<div className="mb-4 mt-4">
 							<Image
 								src="/qr_code.jpeg"
 								width={200}
 								height={200}
+								alt="qrcode"
 							/>
 							<h1>UPI ID: <span className="text-orange-400">8170842884@paytm</span></h1>
 						</div>
@@ -191,4 +192,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;
