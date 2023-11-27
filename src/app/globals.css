@@ -3,6 +3,9 @@
 @import url("https://pham.codes/d/GeistMonoVF.woff2");
 @import 'node_modules/locomotive-scroll/dist/locomotive-scroll';
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Water+Brush&display=swap&display=swap");
+
+/* Roboto Font */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@100;500;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

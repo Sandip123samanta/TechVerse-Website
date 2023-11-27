@@ -13,6 +13,10 @@ const navItems = [
     href: "/",
   },
   {
+    title: "Admin",
+    href: "/admin/dashboard",
+  },
+  {
     title: "About",
     href: "/about",
   },

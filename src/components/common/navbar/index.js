@@ -33,7 +33,7 @@ function Home() {
             <div className={`${styles.logo} relative w-[8vw]`}>
                 <Image className='object-cover w-full' src={logo} alt='logo'/>
             </div>
-            <div className='w-[20vw] h-full flex items-center justify-end gap-5'>
+            {/* <div className='w-[20vw] h-full flex items-center justify-end gap-5'>
                 <div className='h-full z-10'>
                     <GalaxyBtn/>
                 </div>
@@ -42,7 +42,7 @@ function Home() {
                         <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </motion.div>
         </motion.div>
         <AnimatePresence mode="wait">
