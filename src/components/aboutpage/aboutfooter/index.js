@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import GlowBtn from '@/components/common/Buttons/glowbtn/GlowBtn'
+// import GlowBtn from '@/components/common/Buttons/glowbtn/GlowBtn'
 
 function index() {
   return (
@@ -19,7 +19,7 @@ function index() {
             Come on now, RUSH & TAKE PART! You're just a CLICK away!
             </p>
         </div>
-        <GlowBtn/>
+        {/* <GlowBtn/> */}
     </div>
   )
 }

@@ -2,7 +2,7 @@
 import React, {useState } from 'react'
 import './style.scss'
 import emailjs from '@emailjs/browser'
-import withTransition from '@/components/common/transition/Transition';
+// import withTransition from '@/components/common/transition/Transition';
 // import StarsCanvas from '@/components/common/starbackground/StarBackground';
 // import CustomCursor from '@/components/common/customCursor/CustomCursor';
 
@@ -162,4 +162,4 @@ function page() {
   )
 }
 
-export default withTransition(page)
+export default page;
