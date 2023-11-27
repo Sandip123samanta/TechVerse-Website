@@ -30,7 +30,7 @@ const Dashboard = () => {
 	const groupRegistrationsByEvent = () => {
 		const groupedRegistrations = {};
 
-		registrations.forEach((registration) => {
+		registrations?.forEach((registration) => {
 			const eventName = registration.eventName;
 
 			if (!groupedRegistrations[eventName]) {
@@ -153,16 +153,16 @@ const Dashboard = () => {
 											)}`}
 										>
 											<td className="py-2 px-4 border-b border-black border-2 text-center">
-												{registration.name}
+												{registration?.name}
 											</td>
 											<td className="py-2 px-4 border-b border-black border-2 text-center">
-												{registration.email}
+												{registration?.email}
 											</td>
 											<td className="py-2 px-4 border-b border-black border-2 text-center">
-												{registration.phone}
+												{registration?.phone}
 											</td>
 											<td className="py-2 px-4 border-b border-black border-2 text-center">
-												{registration.participants
+												{registration?.participants
 													.length !== 0 ? (
 													<table className="min-w-full">
 														<thead>
@@ -172,7 +172,7 @@ const Dashboard = () => {
 															</tr>
 														</thead>
 														<tbody>
-															{registration.participants.map(
+															{registration?.participants.map(
 																(
 																	participant,
 																	index
@@ -184,12 +184,12 @@ const Dashboard = () => {
 																	>
 																		<td className="py-2 px-4 border-b border-black border-2">
 																			{
-																				participant.name
+																				participant?.name
 																			}
 																		</td>
 																		<td className="py-2 px-4 border-b border-black border-2">
 																			{
-																				participant.email
+																				participant?.email
 																			}
 																		</td>
 																	</tr>
@@ -203,7 +203,7 @@ const Dashboard = () => {
 											</td>
 											<td className="py-2 px-4 border-b border-black border-2 text-center">
 												<Link
-													href={registration.imageUrl}
+													href={registration?.imageUrl}
 												>
 													<h1 className="bg-gradient-to-r from-indigo-500 rounded-lg">
 														Click
