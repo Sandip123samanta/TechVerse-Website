@@ -1,13 +1,19 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
-import styles from "./style.module.css";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import OurCollege from "./section/OurCollege";
+import EventTrailer from "./section/EventTrailer";
 
-const AboutSection = () => {
+gsap.registerPlugin(ScrollTrigger);
+
+const index = () => {
 	return (
-		<div></div>
+		<div className="">
+			<OurCollege/>
+			<EventTrailer/>
+		</div>
 	);
 };
 
-export default AboutSection;
+export default index;

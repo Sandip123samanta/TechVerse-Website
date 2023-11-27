@@ -15,7 +15,8 @@ module.exports = {
       fontFamily: {
         'young': 'Young Serif',
         'lora': 'Lora',
-        "geist":"Geist"
+        "geist":"Geist",
+        "roboto":"Roboto",
       },
     },
   },

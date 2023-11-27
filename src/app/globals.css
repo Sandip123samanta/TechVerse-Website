@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
 @import url("https://pham.codes/d/GeistMonoVF.woff2");
+/* Roboto Font */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@100;500;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,7 +13,6 @@
 	initial-value: 132deg;
 	inherits: false;
 }
-
 
 :root {
 	--foreground-rgb: 0, 0, 0;
@@ -35,16 +36,14 @@
 		rgba(57, 29, 139, 1) 100%
 	);
 
-
 	--card-width: calc(var(--card-height) / 1.5);
 	--card-height: 65vh;
-
 
 	--hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
 	--returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 	-webkit-box-sizing: border-box;
-		    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,7 +65,6 @@ body {
 }
 
 /** Hero Text Animation  **/
-
 .text-box {
 	color: transparent;
 	-webkit-text-stroke: 2px rgb(255, 255, 255);
@@ -169,3 +167,7 @@ body {
 }
 
 /** ================================================================ **/
+.bg-blur {
+	backdrop-filter: blur(.5px);
+	background: rgba(0, 0, 0, 0);
+}

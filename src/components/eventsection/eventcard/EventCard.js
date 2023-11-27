@@ -1,37 +1,29 @@
 import React from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
-
-const EventCard = ({imgUrl,eventName,headName,coHeadName}) => {
+const EventCard = ({ posterUrl, characterUrl, eventName }) => {
 	return (
-		<div className={styles.wrapper}>
-			<div className={styles.cols}>
-				<div
-					className={styles.col}
-					ontouchstart="this.classList.toggle('hover');"
-				>
-					<div className={styles.container}>
-						<div className={styles.front}>
-							<div className={styles.inner}>
-                <Image
-                  src="/poster.jpeg"
-                  width={1200}
-                  height={900}
-                />
-							</div>
-						</div>
-						<div className={styles.back}>
-							<div className={styles.inner}>
-								<h1>Title</h1>
-                <h1>Head</h1>
-                <h1>Co-Heas</h1>
-							</div>
-						</div>
-					</div>
+		<Link href="#">
+			<div className={styles.card}>
+				<div className={styles.wrapper}>
+					<Image
+						src={posterUrl}
+						fill={true}
+						className={styles.cover_image}
+					/>
 				</div>
+				<div className={`hoverable ${styles.title}`}>
+					<h1>{eventName}</h1>
+				</div>
+				<Image
+					src={characterUrl}
+					fill={true}
+					className={styles.character}
+				/>
 			</div>
-		</div>
+		</Link>
 	);
 };
 

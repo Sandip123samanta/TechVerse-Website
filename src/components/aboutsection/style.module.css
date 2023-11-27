@@ -1,0 +1,23 @@
+/* .container.final {
+	display: block;
+}
+
+.container.grid .letter {
+	flex-basis: 50%;
+}
+.container.columns .letter {
+	flex-basis: 25%;
+}
+
+.container.grid,
+.container.columns {
+	align-content: stretch;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+
+.container.plain .letter {
+	background: transparent;
+	color: white;
+	padding: 0;
+} */

@@ -1,12 +1,28 @@
-import { NextResponse,NextRequest } from "next/server";
+import { connectDB } from "@/app/config/dbConfig";
+import { NextResponse } from "next/server";
+import { EventRegistration } from "@/app/models/participant";
+
+connectDB();
 
 export async function POST(request) {
+	const { name, email, phone, eventName, imageUrl, participants } =
+		await request.json();
 	try {
-		const { email, name , nothing , eventName } = await request.json();
-        console.log(email, name , nothing , eventName);
-		return NextResponse.json("Done");
+		const newRegistration = new EventRegistration({
+			name,
+			email,
+			phone,
+			eventName,
+			imageUrl: imageUrl,
+			participants,
+		});
+		const res = await newRegistration.save();
+		return NextResponse.json({
+			message: "Registration Done.",
+			data: res,
+		});
 	} catch (error) {
-		console.log("Error to get data...");
-		return NextResponse.error();
+		console.error("Error To Registration.", error);
+		return NextResponse.json(error);
 	}
 }
