@@ -15,7 +15,7 @@ const EventCard = ({imgUrl,eventName,headName,coHeadName}) => {
 						<div className={styles.front}>
 							<div className={styles.inner}>
                 <Image
-                  src="/poster.jpeg"
+                  src={imgUrl}
                   width={1200}
                   height={900}
                 />
@@ -23,9 +23,10 @@ const EventCard = ({imgUrl,eventName,headName,coHeadName}) => {
 						</div>
 						<div className={styles.back}>
 							<div className={styles.inner}>
-								<h1>Title</h1>
-                <h1>Head</h1>
-                <h1>Co-Heas</h1>
+								<h1>{eventName}</h1>
+                <h1></h1>
+				<div className="mt-16">  <h1>{coHeadName}</h1></div>
+               
 							</div>
 						</div>
 					</div>

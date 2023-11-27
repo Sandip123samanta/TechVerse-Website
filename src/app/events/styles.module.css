@@ -121,11 +121,11 @@
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	background: radial-gradient(
-		
-	
-		rgba(140, 0, 255, 0.8) 100%,
-		rgba(89, 0, 255, 0.5) 100%,
-		transparent 0%
+		circle,
+		transparent 0%,
+		rgba(140, 0, 255, 0.8) 50%,
+		rgba(89, 0, 255, 0.5) 40%,
+		transparent 100%
 	  );
 }
 

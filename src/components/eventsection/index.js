@@ -3,6 +3,8 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import EventCard from "./eventcard/EventCard";
+import styles from "./styles.module.css";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,6 +13,7 @@ const HorizontalScroll = () => {
 	const sectionRef = useRef(null);
 
 	useEffect(() => {
+		
 		const pin = gsap.fromTo(
 			sectionRef.current,
 			{
@@ -41,7 +44,7 @@ const HorizontalScroll = () => {
 					ref={sectionRef}
 					className="scroll-section-inner h-screen w-[800vw] flex"
 				>
-					<div className="scroll-section h-screen w-screen bg-red-300 flex justify-center items-center">
+					<div className="scroll-section h-screen w-screen  flex justify-center items-center">
 						<h1 className=" md:text-9xl font-lora font-extrabold">
 							EVENTS
 						</h1>
