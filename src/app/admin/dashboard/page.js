@@ -8,22 +8,29 @@ const Home = () => {
 	const [responseData, setResponseData] = useState([]);
 
 	useEffect(() => {
+		console.log("Component mounted");
 		const fetchData = async () => {
 			try {
-				console.log("in Fetch Data1..");
+				console.log("Fetching data...");
 				const response = await axios.get("/api/admin");
-				console.log("in Fetch Data2..");
-				console.log(response); // Define your API route
+				console.log(response);
 				setResponseData(response.data);
+				console.log("Data fetched successfully");
 				setIsLoading(false)
 			} catch (error) {
 				setIsLoading(false)
 				console.error("Error fetching data:", error.message);
 			}
 		};
-		console.log("in Fetch Data..");
+	
 		fetchData();
-	});
+	
+		return () => {
+			console.log("Component will unmount");
+			// Cleanup function (cancel ongoing requests, reset state, etc.)
+		};
+	}, []);
+	
 
 	return (
 		<div className="mt-96 text-xl text-white">
