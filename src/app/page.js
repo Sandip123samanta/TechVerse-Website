@@ -2,12 +2,11 @@
 // import Image from 'next/image'
 // import Lenis from '@studio-freight/lenis'
 import { useEffect, useState } from "react";
-// import StarsCanvas from '@/components/common/starbackground/StarBackground'
 import AboutSection from "@/components/home/aboutsection";
 import Hero from "../components/home/blackhole/Hero";
 // import PreLoader from '../components/home/preloader'
 // import { AnimatePresence } from 'framer-motion';
-// import TimerSection from '@/components/home/countdown'
+import TimerSection from '@/components/home/countdown'
 import Gallery from "../components/home/gallery/index";
 // import CustomCursor from '@/components/common/customCursor/CustomCursor';
 import EventSection from "@/components/home/eventsection";
@@ -39,9 +38,8 @@ export default function Home() {
 			{/* <CustomCursor/> */}
 			<main className="h-auto w-screen">
 				<div className="flex flex-col h-full gap-20">
-					{/* <StarsCanvas/> */}
 					<Hero />
-					{/* <TimerSection/> */}
+					<TimerSection/>
 					<AboutSection />
 					<EventSection />
 					<Gallery />

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import axios from "axios";
-// import StarsCanvas from "@/components/common/starbackground/StarBackground";
 import Contact from "../../eventDetails/Contact";
 
 const Page = () => {
@@ -121,7 +120,6 @@ const Page = () => {
 
 	return (
 		<div className="h-screen w-screen md:h-auto md:flex gap-20 justify-center items-center md:mt-24">
-			{/* <StarsCanvas /> */}
 			<Contact
 				params={contactDetails}
 				rules={rules}

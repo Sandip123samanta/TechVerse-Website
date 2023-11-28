@@ -1,16 +1,14 @@
 import React from "react";
 import EventCard from "@/app/events/eventcard/EventCard";
 import Link from "next/link";
-import StarsCanvas from "@/components/common/starbackground/StarBackground";
 
 const page = () => {
 	return (
 		<div className="h-auto w-screen">
-			<StarsCanvas/>
 			<div className="flex justify-center items-center mt-28">
 				<h1 className="text-white text-3xl font-roboto font-bold md:text-9xl">EVENTS</h1>
 			</div>
-			<div className="md:grid md:grid-cols-4 md:mt-16 md:ml-16 gap-6 flex flex-col justify-center items-center mt-20 mb-10">
+			<div className="md:grid md:grid-cols-4 md:mt-16 justify-items-center gap-6 flex flex-col justify-center items-center mt-20 mb-10">
 				<Link href={"/eventregistration/registration/8ballpool"}>
 					<EventCard
 						imgUrl={"/EventPageImg/8ballpool.jpg"}
