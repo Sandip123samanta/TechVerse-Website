@@ -107,7 +107,7 @@ const Dashboard = () => {
 				Total Registrations: {registrationCount}
 			</h1>
 
-			{/* {Object.entries(groupRegistrationsByEvent()).map(
+			{Object.entries(groupRegistrationsByEvent()).map(
 				([eventName, eventRegistrations]) => (
 					<div key={eventName} className="mb-8">
 						<h2 className="text-3xl font-extrabold mb-4 underline underline-offset-8">
@@ -217,7 +217,7 @@ const Dashboard = () => {
 						</div>
 					</div>
 				)
-			)} */}
+			)}
 		</div>
 	);
 };
