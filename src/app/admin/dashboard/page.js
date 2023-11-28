@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const Home = ({ data }) => {
-  const [responseData, setResponseData] = useState(data || []);
+const Home = () => {
+  const [responseData, setResponseData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
