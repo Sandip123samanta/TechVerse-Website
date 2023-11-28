@@ -47,9 +47,9 @@ const Dashboard = () => {
 	const getColorForEvent = (eventName) => {
 		const colorMap = {
 			"8 Ball Pool": "bg-blue-200",
-			"Bgmi": "bg-yellow-200",
+			Bgmi: "bg-yellow-200",
 			"Bishop's Battle": "bg-lime-200",
-			"Craftopia": "bg-purple-200",
+			Craftopia: "bg-purple-200",
 			"E-Football": "bg-cyan-200",
 			"Freeze The Frames": "bg-orange-200",
 			"Idea Scape": "bg-green-200",
@@ -68,34 +68,34 @@ const Dashboard = () => {
 
 	const downloadExcel = (eventName, eventRegistrations) => {
 		const data = eventRegistrations.map((registration) => {
-		  const participantsData = registration.participants.map(
-			(participant) => `Name: ${participant.name}, Email: (${participant.email})`
-		  );
-	  
-		  return {
-			Name: registration.name,
-			Email: registration.email,
-			Phone: registration.phone,
-			Participants: participantsData.join(", "),
-			"Payment SS": registration.imageUrl,
-		  };
+			const participantsData = registration.participants.map(
+				(participant) =>
+					`Name: ${participant.name}, Email: (${participant.email})`
+			);
+
+			return {
+				Name: registration.name,
+				Email: registration.email,
+				Phone: registration.phone,
+				Participants: participantsData.join(", "),
+				"Payment SS": registration.imageUrl,
+			};
 		});
-	  
+
 		const ws = XLSX.utils.json_to_sheet(data);
 		const wb = XLSX.utils.book_new();
 		XLSX.utils.book_append_sheet(wb, ws, "Registrations");
 		const excelBuffer = XLSX.write(wb, { bookType: "xlsx", type: "array" });
 		const dataBlob = new Blob([excelBuffer], {
-		  type: "application/octet-stream",
+			type: "application/octet-stream",
 		});
-	  
+
 		const fileName = `${eventName}_Registrations.xlsx`;
 		const downloadLink = document.createElement("a");
 		downloadLink.href = URL.createObjectURL(dataBlob);
 		downloadLink.download = fileName;
 		downloadLink.click();
-	  };
-	  
+	};
 
 	return (
 		<div className="container h-screen w-screen font-roboto text-white">
@@ -105,8 +105,10 @@ const Dashboard = () => {
 			<h1 className="text-xl mb-8">
 				Total Registrations: {registrationCount}
 			</h1>
-
-			{Object.entries(groupRegistrationsByEvent()).map(
+			{registrations.map((item, index) => (
+				<li key={index}>{item.name}</li>
+			))}
+			{/* {Object.entries(groupRegistrationsByEvent()).map(
 				([eventName, eventRegistrations]) => (
 					<div key={eventName} className="mb-8">
 						<h2 className="text-3xl font-extrabold mb-4 underline underline-offset-8">
@@ -216,7 +218,7 @@ const Dashboard = () => {
 						</div>
 					</div>
 				)
-			)}
+			)} */}
 		</div>
 	);
 };
