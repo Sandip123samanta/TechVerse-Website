@@ -103,9 +103,9 @@ const Dashboard = () => {
 			<h1 className="text-white mt-20 flex justify-center items-center text-4xl md:text-6xl font-extrabold font-roboto mb-4">
 				Admin Dashboard
 			</h1>
-			{/* <h1 className="text-xl mb-8">
+			<h1 className="text-xl mb-8">
 				Total Registrations: {registrationCount}
-			</h1> */}
+			</h1>
 
 			{/* {Object.entries(groupRegistrationsByEvent()).map(
 				([eventName, eventRegistrations]) => (
