@@ -4,13 +4,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const Home = () => {
-	const [isLoading, setIsLoading] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
 	const [responseData, setResponseData] = useState([]);
 
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				setIsLoading(true)
 				console.log("in Fetch Data1..");
 				const response = await axios.get("/api/admin");
 				console.log("in Fetch Data2..");
@@ -24,7 +23,7 @@ const Home = () => {
 		};
 		console.log("in Fetch Data..");
 		fetchData();
-	}, []);
+	});
 
 	return (
 		<div className="mt-96 text-xl text-white">
