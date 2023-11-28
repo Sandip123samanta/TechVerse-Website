@@ -14,7 +14,8 @@ const Home = () => {
 				console.log("Fetching data...");
 				const response = await axios.get("/api/admin");
 				console.log(response);
-				setResponseData(response.data);
+				const data  = await response.data;
+				setResponseData(data);
 				console.log("Data fetched successfully");
 				setIsLoading(false)
 			} catch (error) {
