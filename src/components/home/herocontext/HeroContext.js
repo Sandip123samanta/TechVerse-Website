@@ -52,7 +52,7 @@ const HeroContext = () => {
 							alt="calenderImg"
 						/>
 					</div>
-					20-21 JANUARY, 2024
+					18-19 JANUARY, 2024
 				</div>
 			</motion.div>
 			<motion.div

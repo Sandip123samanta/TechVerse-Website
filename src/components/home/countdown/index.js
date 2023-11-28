@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Timer from './timer/Timer'
 
-const targetDate = new Date('2024-01-21T23:59:59').getTime();
+const targetDate = new Date('2024-01-18T23:59:59').getTime();
 
 const Earth = dynamic(()=>import('@/components/home/countdown/earth/index'),{
     ssr: false,

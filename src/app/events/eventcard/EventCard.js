@@ -6,10 +6,7 @@ const EventCard = ({ imgUrl, eventName, details }) => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.cols}>
-				<div
-					className={styles.col}
-					// onTouchStart="this.classList.toggle('hover');"
-				>
+				<div className={styles.col}>
 					<div className={styles.container}>
 						<div className={styles.front}>
 							<div className={`${styles.inner}`}>
@@ -33,8 +30,12 @@ const EventCard = ({ imgUrl, eventName, details }) => {
 									<h1 className="text-2xl font-lora font-extrabold">
 										{eventName}
 									</h1>
-									<p className="text-base font-serif font-thin">{details}</p>
-									<p className="font-roboto font-normal">Click Here To Register</p>
+									<p className="text-base font-serif font-thin">
+										{details}
+									</p>
+									<p className="font-roboto font-normal">
+										Click Here To Register
+									</p>
 								</div>
 							</div>
 						</div>
