@@ -11,7 +11,9 @@ const Home = () => {
 		const fetchData = async () => {
 			try {
 				setIsLoading(true)
+				console.log("in Fetch Data1..");
 				const response = await axios.get("/api/admin");
+				console.log("in Fetch Data2..");
 				console.log(response); // Define your API route
 				setResponseData(response.data);
 				setIsLoading(false)
