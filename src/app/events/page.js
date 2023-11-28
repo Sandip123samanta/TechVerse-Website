@@ -1,12 +1,12 @@
 import React from "react";
 import EventCard from "@/app/events/eventcard/EventCard";
 import Link from "next/link";
-// import StarsCanvas from "@/components/common/starbackground/StarBackground";
+import StarsCanvas from "@/components/common/starbackground/StarBackground";
 
 const page = () => {
 	return (
 		<div className="h-auto w-screen">
-			{/* <StarsCanvas/> */}
+			<StarsCanvas/>
 			<div className="flex justify-center items-center mt-28">
 				<h1 className="text-white text-3xl font-roboto font-bold md:text-9xl">EVENTS</h1>
 			</div>
