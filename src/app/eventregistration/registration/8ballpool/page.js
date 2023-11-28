@@ -10,6 +10,7 @@ import Contact from "../../eventDetails/Contact";
 const Page = () => {
 	const router = useRouter();
 	const [file, setFile] = useState(null);
+	const [isLoading, setIsLoading] = useState(false);
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
@@ -21,6 +22,7 @@ const Page = () => {
 	const handleForm = async (event) => {
 		event.preventDefault();
 		try {
+			setIsLoading(true);
 			// For Image Upload..
 			const inputFileData = new FormData();
 			inputFileData.append("file", file);
@@ -37,6 +39,7 @@ const Page = () => {
 			});
 			// Check The Backend Response...
 			if (res.data.message === "Registration Done.") {
+				setIsLoading(false);
 				toast.success("Registration Done", {
 					position: "top-center",
 					autoClose: 5000,
@@ -53,6 +56,7 @@ const Page = () => {
 				throw new Error("Backend registration failed");
 			}
 		} catch (error) {
+			setIsLoading(false);
 			toast.error("Error to Register.", {
 				position: "top-center",
 				autoClose: 5000,
@@ -189,7 +193,7 @@ const Page = () => {
 							type="submit"
 							className="w-full bg-blue-500 text-white rounded py-2 hover:bg-blue-600 focus:outline-none"
 						>
-							Submit
+							{isLoading ? "Submitting..." : "Submit"}
 						</button>
 					</form>
 				</div>
