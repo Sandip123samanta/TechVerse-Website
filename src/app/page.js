@@ -11,6 +11,7 @@ import TimerSection from '@/components/home/countdown'
 import Gallery from '../components/home/gallery/index'
 import CustomCursor from '@/components/common/customCursor/CustomCursor';
 import EventSection from '@/components/home/eventsection'
+import AboutFooter from '@/components/aboutpage/aboutfooter/index'
 
 
 export default function Home() {
@@ -44,9 +45,10 @@ export default function Home() {
           <StarsCanvas/>
           <Hero/>
           <TimerSection/>
-          <AboutSection/>
+          {/* <AboutSection/> */}
           <EventSection/>
           <Gallery/>
+          <AboutFooter/>
         </div>  
       </main>
     </>

@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 600px){
     .main{
-        top: 10vw;
+        margin-top: 40vw;
         height: 50vh;
         margin-bottom: 10vh;
     }

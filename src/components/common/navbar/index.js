@@ -35,7 +35,7 @@ function Home() {
           </div>
           <div className="w-[20vw] h-full flex items-center justify-end gap-5">
             <div className="h-full z-10">
-                <button className="text-white lg:text-[1.5vw] text-[4vw] border border-purple-500 rounded-lg p-1">
+                <button className={`${styles.brochure}`}>
                     Brochure
                 </button>
             </div>
@@ -56,7 +56,7 @@ function Home() {
           </div>
           <span
           style={{transform: `translateX(${completion - 100}%)`}}
-          className="absolute bg-gradient-to-r from-[#090979] to-[#0088ff] h-1 w-full top-0 left-0"
+          className="absolute bg-gradient-to-r from-[#090979] to-[#0088ff] h-1 w-full top-0 left-0 transition-all ease-linear"
           />
         </motion.div>
       </motion.div>

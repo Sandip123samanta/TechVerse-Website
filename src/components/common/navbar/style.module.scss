@@ -8,8 +8,14 @@
     border-radius: .5vw;
 
     &:hover{
-        background-color: #a48fff1f;
+        background-color: #7042f88b;
     }
+}
+
+
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
 }
 
 .header{
