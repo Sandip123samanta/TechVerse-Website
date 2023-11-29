@@ -28,7 +28,7 @@ const HorizontalScroll = () => {
 					end: "150% 20%",
 					scrub: 2,
 					pin: true,
-					markers:true,
+					// markers:true,
 				},
 				
 			}
@@ -55,7 +55,7 @@ const HorizontalScroll = () => {
 							EVENTS
 						</h1>
 					</div>
-					<div className="scroll-section h-screen w-[550vw] justify-center items-center">
+					<div className="scroll-section h-screen w-auto justify-center items-center">
 						<div className="flex mt-40">
 						<EventCard posterUrl={images[0].poster} characterUrl={images[0].charecter} eventName={images[0].eventName}/>
 							<EventCard posterUrl={images[1].poster} characterUrl={images[1].charecter} eventName={images[1].eventName}/>

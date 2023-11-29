@@ -1,16 +1,16 @@
 import React from 'react'
 import './style.css'
-// import GlowBtn from '@/components/common/Buttons/glowbtn/GlowBtn'
+import GlowBtn from '@/components/common/Buttons/glowbtn/glowBtn'
 
 function index() {
   return (
     <div className="content flex flex-col items-center justify-center mt-[5vw] mb-[5vw]">
         <h1 className="title">Participate Now
-            <div class="aurora">
-            <div class="aurora__item"></div>
-            <div class="aurora__item"></div>
-            <div class="aurora__item"></div>
-            <div class="aurora__item"></div>
+            <div className="aurora">
+            <div className="aurora__item"></div>
+            <div className="aurora__item"></div>
+            <div className="aurora__item"></div>
+            <div className="aurora__item"></div>
             </div>
         </h1>
         <div className='lg:max-w-[60vw] max-w-[80vw] flex flex-col justify-center items-center'>
@@ -19,7 +19,7 @@ function index() {
             Come on now, RUSH & TAKE PART! You&apos;re just a CLICK away!
             </p>
         </div>
-        {/* <GlowBtn/> */}
+        <GlowBtn/>
     </div>
   )
 }

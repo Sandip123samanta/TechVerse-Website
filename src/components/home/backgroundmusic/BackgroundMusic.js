@@ -1,7 +1,7 @@
 // components/BackgroundMusic.js
 'use client';
 import { useState } from 'react';
-import './style.scss'
+import Image from "next/image";
 
 const BackgroundMusic = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -22,9 +22,9 @@ const BackgroundMusic = () => {
   };
 
   return (
-    <div className="background-music fixed bottom-8 left-8 z-20 ">
-      <button className="music overflow-hidden" onClick={toggleAudio}>
-        <img className='w-full h-full object-cover' src={`${isPlaying ? 'pause.png' : 'play.png'}`}/>
+    <div className="fixed md:-bottom-2 md:left-2 -bottom-5 -left-5 z-20 ">
+      <button className="overflow-hidden relative md:w-32 md:h-32 w-36 h-36" onClick={toggleAudio}>
+        <Image className='w-full h-full object-cover top-0 bottom-0' src={`${isPlaying ? '/playpause.gif' : '/pause.png'}`} alt='playpause button' fill={true}/>
       </button>
       <audio id="background-music" autoPlay loop>
         <source src={audioUrl} type="audio/mp3" />

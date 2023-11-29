@@ -1,4 +1,4 @@
-// Import necessary libraries and resources
+"use client"
 import React, { useEffect, useRef } from 'react';
 import rocket from '../../../../public/rocketgif.gif';
 import Image from 'next/image';
@@ -46,7 +46,7 @@ const CustomCursor = () => {
 
   return (
     <div className='cursor' ref={cursorRef}>
-      <Image src={rocket} width={100} />
+      <Image src={rocket} width={100} alt='rocket' />
     </div>
   );
 };

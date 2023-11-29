@@ -1,7 +1,7 @@
 .logo{
     position: relative;
-    width: 20vw;
-    height: 20vw;
+    width: 7vw;
+    height: 7vw;
     overflow: hidden;
 }
 
@@ -14,13 +14,18 @@
 }
 
 .venue{
-    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     aspect-ratio: 1;
 }
 
 .socials{
-    width: 20vw;
     aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .creator{
@@ -29,62 +34,14 @@
     height: 30vh;
 }
 
-@media screen and (max-width: 600px) {
-    .logoContainer{
+@media screen and (max-width: 768px) {
+    .sponser{
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 1vw;
-    }
-
-    .logo{
-        width: 30vw;
-        height: 30vw;
-    }
-
-    .venue{
-        width: 40vw;
-        height: 20vh;
-    }
-
-    .venue h1{
-        font-size: 4vw;
-    }
-
-    .venue h3{
-        font-size: 2vw;
-    }
-
-    .socials{
-        width: 60vw;
-        text-align: center;
-    }
-
-    .socials h1{
-        font-size: 4vw;
-    }
-
-    .socials h3{
-        font-size: 2vw;
-    }
-
-    .socials div{
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
-
-    .sponser h1{
-        font-size: 4vw;
-    }
-
-    .creator h1{
-        font-size: 2vw;
-    }
-
-    .creator hr{
-        margin-bottom: 10vw;
-    }
-
-    .creator div a{
-        font-size: 4vw;
+    .logoC{
+        display: none;
     }
 }

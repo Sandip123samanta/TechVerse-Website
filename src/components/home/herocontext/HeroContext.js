@@ -1,8 +1,7 @@
 import React from "react";
 import "./style.css";
 import Image from "next/image";
-// import GlowBtn from "@/components/common/Buttons/glowbtn/GlowBtn";
-
+import GlowBtn from "@/components/common/Buttons/glowbtn/glowBtn";
 import { slideInFromLeft, slideInFromTop } from "../../utils/motion";
 import { motion } from "framer-motion";
 
@@ -59,7 +58,7 @@ const HeroContext = () => {
 				variants={slideInFromLeft(2.8)}
 				className="py-[8px] px-[7px] opacity-[0.9]"
 			>
-				{/* <GlowBtn/> */}
+				<GlowBtn/>
 			</motion.div>
 		</motion.div>
 	);

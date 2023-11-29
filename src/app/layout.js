@@ -1,11 +1,11 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "../components/common/navbar";
-// import Footer from "@/components/common/footer/Footer";
+import Footer from "@/components/common/footer/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import StarsCanvas from "@/components/common/starbackground/StarBackground";
-const inter = Inter({ subsets: ["latin"] });
+import CustomCursor from '@/components/common/customCursor/CustomCursor';
+import SmoothScroll from "@/components/utils/SmoothScroll";
 
 export const metadata = {
 	title: "TechVerse2.0",
@@ -16,13 +16,15 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body
-				className={`${inter.className} bg-[#030014] overflow-x-hidden`}
+				className={`bg-[#030014] overflow-x-hidden`}
 			>
+				<SmoothScroll/>
+				<CustomCursor />
 				<ToastContainer />
-				<StarsCanvas/>
+				<StarsCanvas />
 				<Header />
 				{children}
-				{/* <Footer /> */}
+				<Footer />
 			</body>
 		</html>
 	);
