@@ -19,7 +19,7 @@ function Gallery() {
 			<h1 className="text-white text-center text-[5vw] font-bold galleryText">
 				Gallery
 			</h1>
-			<div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-screen h-screen p-6">
+			<div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-screen h-screen p-10">
 				<div className="grid gap-4">
 					<div className="relative overflow-hidden">
 						<Image

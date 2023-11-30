@@ -47,6 +47,10 @@
 }
 
 @media screen and (max-width: 600px) {
+	.text-box{
+		-webkit-text-stroke: 1px rgb(255, 255, 255);
+	}
+	
 	.Welcome-text{
 		font-size: 5vw;
 	}

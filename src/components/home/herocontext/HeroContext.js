@@ -26,7 +26,7 @@ const HeroContext = () => {
 				variants={slideInFromLeft(2.5)}
 				className="py-[8px] px-[7px] opacity-[0.9]"
 			>
-				<h1 className="hoverable text-box text-box font-young text-[9vw] sm:text-5xl md:text-6xl lg:text-9xl">
+				<h1 className="hoverable text-box text-box font-young text-4xl md:text-9xl lg:text-9xl">
 					TECHVERSE 2.0
 				</h1>
 			</motion.div>

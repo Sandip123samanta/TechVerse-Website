@@ -8,8 +8,6 @@ const StarBackground = (props) => {
   const ref = useRef();
   const [sphere] = useState(() => {
     const positions = random.inSphere(new Float32Array(5000), { radius: 1.2 });
-    console.log("Positions:", positions);
-  
     // Check for NaN values
     if (positions.some(isNaN)) {
       console.error("Generated positions contain NaN values.");
