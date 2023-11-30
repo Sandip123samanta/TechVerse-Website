@@ -15,7 +15,7 @@ const RightSide = () => {
 				start: "top top",
 				end: "bottom bottom",
 				scrub: 8,
-				markers: true,
+				// markers: true,
 				// pin:true
 			},
 		});

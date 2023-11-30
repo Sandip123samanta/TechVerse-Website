@@ -23,9 +23,9 @@ export default function Home() {
 
 	return (
 		<>
-			{/* <AnimatePresence mode="wait">
+			<AnimatePresence mode="wait">
 				{isLoading && <PreLoader />}
-			</AnimatePresence> */}
+			</AnimatePresence>
 			<main className="h-auto w-screen">
 				<div className="flex flex-col h-full gap-20">
 					<Hero />
