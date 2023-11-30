@@ -18,8 +18,8 @@ export default function RootLayout({ children }) {
 			<body
 				className={`bg-[#030014] overflow-x-hidden`}
 			>
-				<SmoothScroll/>
-				<CustomCursor />
+				{/* <SmoothScroll/>
+				<CustomCursor /> */}
 				<ToastContainer />
 				<StarsCanvas />
 				<Header />
