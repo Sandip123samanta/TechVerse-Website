@@ -342,8 +342,8 @@ const RightSide = () => {
 							OUR
 						</h1>
 					</section>
-					<section id="paragraph" className="md:mb-60 mb-32">
-						<p className="text-center text-xs md:text-base">
+					<section id="paragraph" className="md:mb-60 mb-16">
+						<p className="text-center text-[.5rem] md:text-base">
 							Guru Nanak Institute of Technology was instituted
 							with a vision to empower the aspiring professionals
 							with the technological knowledge and professional

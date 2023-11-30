@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
 @import url("https://pham.codes/d/GeistMonoVF.woff2");
-@import 'node_modules/locomotive-scroll/dist/locomotive-scroll';
+@import "node_modules/locomotive-scroll/dist/locomotive-scroll";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Water+Brush&display=swap&display=swap");
 
 /* Roboto Font */
@@ -10,26 +10,27 @@
 @tailwind components;
 @tailwind utilities;
 
-html,body{
-  margin: 0;
-  padding: 0;
+html,
+body {
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-    /* cursor: none !important; */
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
+	/* cursor: none !important; */
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	display: none;
 }
 
-#leva__root{
+#leva__root {
 	display: none;
 }
