@@ -4,11 +4,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Sponsers = () => {
+const Sponsor = () => {
 	return (
 		<div className="w-screen flex flex-col justify-center items-center ">
 			<h1 className="text-4xl md:text-7xl font-roboto font-extrabold text-white">
-				OUR SPONSERS
+				OUR SPONSORS
 			</h1>
 			<marquee>
 				<div className="w-[200vw] md:w-screen relative flex justify-center items-center gap-14 mt-20">
@@ -40,4 +40,4 @@ const Sponsers = () => {
 	);
 };
 
-export default Sponsers;
+export default Sponsor;

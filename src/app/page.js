@@ -8,7 +8,7 @@ import TimerSection from "@/components/home/countdown";
 import Gallery from "../components/home/gallery/index";
 import EventSection from "@/components/home/eventsection";
 import AboutFooter from "@/components/aboutpage/aboutfooter/index";
-import Sponsers from "@/components/home/sponsers/Sponsers";
+import Sponsers from "@/components/home/sponsor/Sponsor";
 import Footer from "@/components/common/footer/Footer";
 
 
