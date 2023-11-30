@@ -275,7 +275,7 @@ const RightSide = () => {
 			tl.fromTo(
 				"#ourteam1",
 				{
-					x: "120%",
+					x: "110%",
 					duration: 10,
 				},
 				{
@@ -287,7 +287,7 @@ const RightSide = () => {
 			tl.fromTo(
 				"#ourteam2",
 				{
-					x: "-110%",
+					x: "-80%",
 					duration: 10,
 				},
 				{
