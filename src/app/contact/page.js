@@ -1,5 +1,5 @@
 'use client';
-import React, {Suspense, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './style.scss'
 import emailjs from '@emailjs/browser'
 import withTransition from '@/components/common/transition/transition';
@@ -7,10 +7,6 @@ import StarsCanvas from '@/components/common/starbackground/StarBackground';
 import CustomCursor from '@/components/common/customCursor/CustomCursor';
 
 function page() {
-  const emailServiceId = 'service_mwwmqmb'
-  const emailTemplateId = 'template_2q2o1yo'
-  const emailApiKey = 'dW6gxDKu4y1I_tBaxViBb'
-  const formRef = useRef(null)
   const [form, setForm] = useState(
     {
       name: '',
@@ -22,14 +18,12 @@ function page() {
     const handleChange = (e) => {
       setForm({...form, [e.target.name]: e.target.value})
     };
-    const handleFocus = () => {};
-    const handleBlur = () => {};
     const handleSubmit = (e) => {
       e.preventDefault();
       setIsLoading(true);
       emailjs.send(
-        emailServiceId,
-        emailTemplateId,
+        "service_mwwmqmb",
+        "template_2q2o1yo",
         {
           from_name: form.name,
           to_name:'TechVerse Team',
@@ -38,7 +32,7 @@ function page() {
           message: form.message,
           phone: form.phone
         },
-        emailApiKey
+        "vcmCAiLq0z6V01el1"
       ).then(()=>{
         setIsLoading(false);
         setForm({name: '',email: '',message: '',phone: ''})
@@ -93,8 +87,6 @@ function page() {
                   required
                   value={form.name}
                   onChange={handleChange} 
-                  onFocus={handleFocus}
-                  onBlur={handleBlur}
                   />
                 </label>
                 <label
@@ -108,8 +100,6 @@ function page() {
                   required
                   value={form.phone}
                   onChange={handleChange} 
-                  onFocus={handleFocus}
-                  onBlur={handleBlur}
                   />
                 </label>
                 <label
@@ -123,8 +113,6 @@ function page() {
                   required
                   value={form.email}
                   onChange={handleChange} 
-                  onFocus={handleFocus}
-                  onBlur={handleBlur}
                   />
                 </label>
                 <label
@@ -138,16 +126,12 @@ function page() {
                   required
                   value={form.message}
                   onChange={handleChange} 
-                  onFocus={handleFocus}
-                  onBlur={handleBlur}
                   />
                 </label>
                 <button 
                 type="submit" 
                 class="px-5 py-2.5 text-sm justify-center font-medium text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 disabled={isLoading}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
                 >
                   <svg class="w-3.5 h-3.5 text-white me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
                   <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
