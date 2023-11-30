@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
 				<ToastContainer />
 				<Header />
 				{children}
-				{/* <Footer /> */}
+				<Footer />
 			</body>
 		</html>
 	);

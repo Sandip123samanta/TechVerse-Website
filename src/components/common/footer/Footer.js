@@ -1,63 +1,135 @@
-import React from 'react'
-import styles from './style.module.css'
-import Link from 'next/link'
-import Image from 'next/image'
-import Logo from '../../../../public/logo2.png'
-import Instagram from '../../../../public/Instagram2.png'
-import Facebook from '../../../../public/Facebook2.png'
-import GNIT from '../../../../public/GNIT.png'
-import JIS from '../../../../public/jisgroup.png'
+import React from "react";
+import "./style.css";
+import Link from "next/link";
+import Image from "next/image";
+import Logo from "../../../../public/logo2.png";
+import GNIT from "../../../../public/GNIT.png";
+import JIS from "../../../../public/jisgroup.png";
 
 function Footer() {
   return (
-    <div className='relative w-screen h-screen flex flex-col items-center justify-between text-white pt-10 pl-10 pr-10'>
-        <div className='w-[90vw] h-[70vh] flex flex-col mt-[2vw] items-center justify-center'>
-            <div className={`${styles.logoContainer} w-full h-auto flex flex-row justify-center gap-[5vw]`}>
-                <div className={styles.logo}>
-                    <Image src={Logo}/>
-                </div>
-                <div className={styles.venue}>
-                    <h1 className='text-gray-500 font-young text-[2vw]'>VENUE LOCATION</h1>
-                    <h3 className='mt-2 text-[1.5vw] mb-2'>18-19 JANUARY, 2024</h3>
-                    <h3 className='text-[1.5vw]'>Guru Nanak Institute of Technology 157/F, Nilgunj Rd, Sahid Colony, Panihati, Kolkata, West Bengal 700114</h3>
-                </div>
-                <div className={styles.socials}>
-                    <h1 className='text-gray-500 font-young text-[2vw]'>SOCIAL CONNECTIONS</h1>
-                    <h3 className='text-[1.2vw]'>Keep an eye on our hotdrops</h3>
-                    <div className='relative w-full h-auto flex gap-0'>
-                        <Link className='w-1/5' href='#'>
-                            <Image className='object-cover w-full' src={Facebook} />
-                        </Link>
-                        <Link className='w-1/5' href='#'>
-                            <Image className='object-cover w-full' src={Instagram} />
-                        </Link>      
-                    </div>
-                    <div className={`${styles.sponser} relative w-full h-auto`}>
-                        <h1 className='text-gray-500 font-young text-[2vw] mt-[2vw]'>Our sponsers</h1>
-                        <div className='relative w-full flex items-center gap-3'>
-                            <Image src={GNIT} className='object-cover w-2/5'/>
-                            <Image src={JIS} className='object-cover w-1/5 h-fit'/>
-                        </div>    
-                    </div>
-                </div>
-            </div>
+    <div className="text-white flex md:flex-row flex-col p-9">
+      <div className="flex flex-col gap-6 h-auto w-full md:w-[30vw]">
+        <div className="flex md:flex-col flex-row">
+          <div className="relative w-36 h-36 overflow-hidden logo">
+            <Link href="/">
+              <Image
+                src={Logo}
+                alt="logo"
+                fill
+                className="object-cover w-full h-full"
+              />
+            </Link>
+          </div>
+          <div className="relative flex gnit">
+            <Image src={GNIT} alt="gnit logo" width={100} height={100} />
+            <Image src={JIS} alt="gnit logo" width={80} height={50} />
+          </div>
         </div>
-        <div className={styles.creator}>
-            <hr className='bg-gray-500 w-[90vw] mb-4'/>
-            <h1 className='text-[1vw] text-gray-500'>©️ 2024 <Link className='text-blue-500' href='#'>TECHVERSE</Link> ORGANIZED BY GNIT</h1>
-            <h1 className='text-[1vw] text-gray-500'>
-                DESIGNED & DEVELOPED WITH LOVE BY 
-            </h1>
-            <div className='flex flex-col text-[1.5vw]'>
-                <h1>
-                    <Link className='text-blue-500' href='#'>PARTHIV SARKAR </Link>
-                 &  <Link className='text-blue-500' href='#'>KOUSIK BOSE</Link> &
-                 </h1>
-                <Link className='text-blue-500' href='#'>SANDIP SAMANTA</Link>
-            </div>
+        <div>
+          <h1 className="text-3xl font-bold md:text-left text-center">
+            Techverse
+          </h1>
         </div>
+        <div className="md:w-[20vw] w-full md:text-left text-center">
+          <p>
+            It is a platform for students to showcase their technical and
+            creative skills, participate in competitions.
+          </p>
+        </div>
+      </div>
+      <div className="flex md:mt-0 mt-5 md:flex-row flex-col">
+        <div className="venue flex-col flex md:justify-between md:items-start items-center justify-center md:w-[25vw] w-full md:text-left text-center">
+          <h1 className="text-2xl text-gray-400 font-young md:mb-0 mb-5">
+            Venue Location
+          </h1>
+          <div className="h-2/3">
+            <p className="text-xl text-yellow-200">18-19 January, 2024</p>
+            <p>
+              Guru Nanak Institute of Technology 157/F, Nilgunj Rd, Sahid
+              Colony, Panihati, Kolkata, West Bengal 700114
+            </p>
+          </div>
+        </div>
+        <div className="general flex flex-col justify-between md:w-[25vw] w-full items-center">
+          <h1 className="text-2xl text-gray-400 font-young md:mt-0 md:mb-0 mt-5 mb-5">
+            General
+          </h1>
+          <div className="flex md:flex-col flex-row md:gap-0 gap-3 md:mb-0 mb-3">
+            <Link
+              href="/"
+              className="hover:translate-x-3 transition-all ease-linear duration-75 text-xl"
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className="hover:translate-x-3 transition-all ease-linear duration-75 text-xl"
+            >
+              About
+            </Link>
+            <Link
+              href="/events"
+              className="hover:translate-x-3 transition-all ease-linear duration-75 text-xl"
+            >
+              Events
+            </Link>
+            <Link
+              href="/contact"
+              className="hover:translate-x-3 transition-all ease-linear duration-75 text-xl"
+            >
+              Contact
+            </Link>
+          </div>
+          <Link href="/privacyPolicy">Privacy policy</Link>
+        </div>
+        <div className="social md:w-[25vw] w-full flex flex-col justify-between items-center">
+          <h1 className="text-2xl text-gray-400 font-young md:mt-0 md:mb-0 mt-5 mb-5">
+            SOCIAL
+          </h1>
+          <div className="flex md:flex-col flex-row md:gap-0 gap-3 md:mb-0 mb-5">
+            <Link
+              href="https://www.facebook.com/profile.php?id=61553361925877&mibextid=ZbWKwL"
+              className="hover:translate-x-3 transition-all ease-linear duration-75 text-xl"
+            >
+              Facebook
+            </Link>
+            <Link
+              href="https://instagram.com/techverse2.0?igshid=eHA1c29oNGFuYmJy"
+              className="hover:translate-x-3 transition-all ease-linear duration-75 text-xl"
+            >
+              Instagram
+            </Link>
+          </div>
+          <div className="flex flex-col ">
+            <p className="md:text-left text-center">
+              ©{" "}
+              <Link href="/" className="text-blue-500">
+                Techverse
+              </Link>
+              . All rights reserved | Developed by
+            </p>
+            <div className="flex flex-col justify-center items-center">
+              <div>
+                <Link href="https://www.facebook.com/parthiv.sarker" className="text-blue-500">
+                  Parthiv Sarkar
+                </Link>{" "}
+                &
+                <Link href="https://www.facebook.com/kousik.bose.18" className="text-blue-500">
+                  {" "}
+                  Kousik Bose
+                </Link>{" "}
+                &
+              </div>
+              <Link href="https://www.facebook.com/profile.php?id=100069326365665" className="text-blue-500">
+                Sandip Samanta
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
