@@ -19,11 +19,11 @@ const Contact = ({ params, rules,imgUrl }) => {
 		<div className="mb-5 md:mb-0 mt-24 md:mt-0 p-2 md:p-0 text-white">
 			<section className="relative border border-white p-4 shadow-2xl mb-5 rounded-lg">
 				<div className="absolute inset-0 bg-blur rounded-lg"></div>
-				<div className="relative md:w-[35rem] font-roboto">
+				<div className="md:w-[35rem] font-roboto">
 					<h1 className="text-center text-3xl font-roboto font-bold underline underline-offset-4">
 						Event Details
 					</h1>
-					<div className="md:flex gap-4 mt-5 flex flex-col items-center">
+					<div className="relative md:flex gap-4 mt-5 flex flex-col items-center">
 						<Image
 							src={imgUrl}
 							width={200}

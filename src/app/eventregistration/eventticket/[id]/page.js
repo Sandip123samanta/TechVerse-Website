@@ -2,7 +2,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import html2canvas from "html2canvas";
 import axios from "axios";
-// import StarsCanvas from "@/components/common/starbackground/StarBackground";
 
 const EventTicket = ({ params }) => {
 	const [data, setData] = useState();
@@ -36,12 +35,11 @@ const EventTicket = ({ params }) => {
 	};
 
 	return (
-		<div className=" h-screen w-screen flex justify-center items-center">
-			{/* <StarsCanvas/> */}
-			<div>
+		<div className="h-screen w-screen flex justify-center items-center mt-56 md:mt-0 overflow-hidden">
+			<div className="w-fit h-fit">
 				<div
-					ref={cardRef}
-					className="w-[700px] h-[250px] bg-[#E0F4FF] rounded-2xl overflow-hidden shadow-md flex"
+				 	ref={cardRef}
+					className="w-[500px] md:w-[700px] h-[250px] bg-[#E0F4FF] rounded-2xl overflow-hidden shadow-md flex rotate-90 md:rotate-0"
 				>
 					<div className="w-20 h-[100%] bg-black text-white">
 						<h1 className="w-max text-2xl font-extrabold -rotate-90 -ml-[3.8rem] mt-28 font-young">
@@ -50,11 +48,11 @@ const EventTicket = ({ params }) => {
 					</div>
 
 					<div className="p-4 w-[98%]">
-						<div className="mb-4 mt-2 flex justify-between items-center">
+						<div className="mb-4 mt-2 flex justify-between gap-5 items-center">
 							<h1 className="text-3xl font-bold font-roboto text-[#272829]">
 								{data?.eventName}
 							</h1>
-							<p className="text-sm text-black text-right mr-5">
+							<p className="text-sm text-black text-right">
 								<span className="font-semibold">
 									ID: {data?._id}
 								</span>
@@ -84,7 +82,7 @@ const EventTicket = ({ params }) => {
 						</div>
 					</div>
 				</div>
-				<div className="p-4 text-center">
+				<div className="p-4 text-center mt-56 md:mt-10">
 					<button
 						className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
 						onClick={downloadImage}

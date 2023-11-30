@@ -4,6 +4,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "./styles.module.css";
+import NavigateButton from "@/components/common/Buttons/navigateButton/NavigateButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,8 +13,8 @@ const RightSide = () => {
 		let tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: "#main-container",
-				start: "top top",
-				end: "bottom bottom",
+				start: "top center",
+				end: "bottom bottom+=500",
 				scrub: 8,
 				// markers: true,
 				// pin:true
@@ -128,12 +129,12 @@ const RightSide = () => {
 				"#paragraph",
 				{
 					scale: 0,
-					opacity:0,
+					opacity: 0,
 					duration: 15,
 				},
 				{
 					scale: 1,
-					opacity:1,
+					opacity: 1,
 					duration: 10,
 				},
 				"t"
@@ -262,12 +263,12 @@ const RightSide = () => {
 				"#paragraph",
 				{
 					scale: 0,
-					opacity:0,
+					opacity: 0,
 					duration: 10,
 				},
 				{
 					scale: 1,
-					opacity:1,
+					opacity: 1,
 					duration: 10,
 				},
 				"t"
@@ -372,6 +373,9 @@ const RightSide = () => {
 					height={500}
 					className="rounded-md"
 				/>
+			</div>
+			<div className=" w-full mt-20 flex justify-center items-center">
+				<NavigateButton props="Learn More"/>
 			</div>
 		</>
 	);

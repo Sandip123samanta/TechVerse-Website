@@ -83,7 +83,7 @@
 .title h1 {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: bold;
-	font-size: 3vw;
+	font-size: 2vw;
 	background-image: linear-gradient(
 		to right,
 		#462523 0,
@@ -128,7 +128,7 @@
 	}
 
 	.title h1 {
-		font-size: 7vw;
+		font-size: 4.5vw;
 	}
 	.title p {
 		font-size: 3vw;

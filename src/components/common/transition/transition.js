@@ -1,14 +1,14 @@
 // import { motion } from "framer-motion";
-// import './style.css'
+// import './style.css';
 
 // const WithTransition = (OriginalComponent) => {
 //   return () => (
 //     <>
-//       <OriginalComponent />
+//     <OriginalComponent />
 //       <motion.div
 //         className="slide-in"
 //         initial={{ scaleX: 0 }}
-//         animate={{ scaleX: 0 }}
+//         animate={{ scaleX: 1 }}  // Change from scaleX: 0 to scaleX: 1
 //         exit={{ scaleX: 1 }}
 //         transition={{ duration: 1, ease: "easeInOut" }}
 //       />
@@ -24,13 +24,3 @@
 // };
 
 // export default WithTransition;
-
-import React from 'react'
-
-const transition = () => {
-  return (
-    <div>transition</div>
-  )
-}
-
-export default transition

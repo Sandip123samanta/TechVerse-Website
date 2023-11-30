@@ -8,18 +8,20 @@ const Dashboard = () => {
 	const [registrations, setRegistrations] = useState([]);
 	const [registrationCount, setRegistrationCount] = useState(0);
 
+	const fetchData = async () => {
+		try {
+			const response = await axios.get("/api/admin");
+			setRegistrations(response.data);
+			console.log(response);
+			setRegistrationCount(response.data.length);
+		} catch (error) {
+			console.error("Error fetching data:", error);
+		}
+	};
+
 	useEffect(() => {
 		// Fetch data from your API endpoint
-		const fetchData = async () => {
-			try {
-				const response = await axios.get("/api/admin");
-				setRegistrations(response.data);
-				console.log(response.data);
-				setRegistrationCount(response.data.length);
-			} catch (error) {
-				console.error("Error fetching data:", error);
-			}
-		};
+		console.log("UseEffect called.");
 		fetchData();
 	}, []);
 

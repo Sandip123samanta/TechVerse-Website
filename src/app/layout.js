@@ -1,6 +1,5 @@
 import "./globals.css";
 import Header from "../components/common/navbar";
-import Footer from "@/components/common/footer/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import StarsCanvas from "@/components/common/starbackground/StarBackground";
@@ -24,7 +23,6 @@ export default function RootLayout({ children }) {
 				<StarsCanvas />
 				<Header />
 				{children}
-				<Footer />
 			</body>
 		</html>
 	);

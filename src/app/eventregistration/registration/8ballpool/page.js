@@ -90,7 +90,7 @@ const Page = () => {
 	];
 
 	return (
-		<div className="h-screen w-screen md:flex gap-20 justify-center items-center md:mt-24">
+		<div className="relative h-screen w-screen md:flex gap-20 justify-center items-center md:mt-24 mb-[120vh] md:mb-0">
 			<Contact
 				params={contactDetails}
 				rules={rules}

@@ -5,6 +5,7 @@ import AboutCollege from "@/components/aboutpage/aboutcollege/collegeImage";
 import Description from "@/components/aboutpage/aboutcollege/description";
 import AboutTeam from "@/components/aboutpage/team";
 import AboutFooter from "@/components/aboutpage/aboutfooter/index";
+import Footer from "@/components/common/footer/Footer";
 
 
 function page() {
@@ -15,6 +16,7 @@ function page() {
 			<Description />
 			<AboutTeam />
 			<AboutFooter />
+			<Footer/>
 		</div>
 	);
 }
