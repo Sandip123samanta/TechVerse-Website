@@ -15,6 +15,14 @@ const HorizontalScroll = () => {
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
+		(async () => {
+			const LocomotiveScroll = (await import("locomotive-scroll"))
+				.default;
+			const locomotiveScroll = new LocomotiveScroll();
+		})();
+	}, []);
+
+	useEffect(() => {
 		const isMobile = window.innerWidth <= 768;
 		if (isMobile) {
 			setIsMobile(true);
@@ -62,38 +70,47 @@ const HorizontalScroll = () => {
 								posterUrl={images[0].poster}
 								characterUrl={images[0].charecter}
 								eventName={images[0].eventName}
+								link="/eventregistration/registration/bgmi"
 							/>
 							<EventCard
 								posterUrl={images[1].poster}
 								characterUrl={images[1].charecter}
 								eventName={images[1].eventName}
+								link="/eventregistration/registration/codegolf"
 							/>
 							<EventCard
 								posterUrl={images[2].poster}
 								characterUrl={images[2].charecter}
 								eventName={images[2].eventName}
+								link="/eventregistration/registration/bishopbattle"
 							/>
+							
 							<EventCard
 								posterUrl={images[3].poster}
 								characterUrl={images[3].charecter}
 								eventName={images[3].eventName}
+								link="/eventregistration/registration/roborampage"
 							/>
 							<EventCard
 								posterUrl={images[4].poster}
 								characterUrl={images[4].charecter}
 								eventName={images[4].eventName}
+								link="/eventregistration/registration/posterexhibition"
 							/>
 							<EventCard
 								posterUrl={images[5].poster}
 								characterUrl={images[5].charecter}
 								eventName={images[5].eventName}
+								link="/eventregistration/registration/freezetheframe"
 							/>
 							<Link
 								href="/events"
 								className="relative md:h-20 md:w-20 md:ml-12 bg-blue-500 hover:bg-blue-600 border border-spacing-1 rounded-lg md:rounded-full overflow-hidden"
 							>
 								{isMobile ? (
-									<h1 className="text-xl p-4 font-bold text-white">Explore More</h1>
+									<h1 className="text-xl p-4 font-bold text-white">
+										Explore More
+									</h1>
 								) : (
 									<Image
 										src="/arrow.png"

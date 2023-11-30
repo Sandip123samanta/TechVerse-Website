@@ -37,9 +37,12 @@ function Home() {
 					</div>
 					<div className="w-[20vw] h-full flex items-center justify-end gap-5">
 						<div className="h-full z-10">
-							<button className={`${styles.brochure}`}>
+							<Link
+								href="https://drive.google.com/file/d/1wSJyqIrl6JyrRNurWCuu4cCPkpKYq4Fs/view?usp=drive_link"
+								className={`${styles.brochure}`}
+							>
 								Brochure
-							</button>
+							</Link>
 						</div>
 						<div className={styles.header}>
 							<div

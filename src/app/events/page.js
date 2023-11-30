@@ -2,7 +2,6 @@ import React from "react";
 import EventCard from "@/app/events/eventcard/EventCard";
 import Link from "next/link";
 import Footer from "@/components/common/footer/Footer";
-// import WithTransition from "@/components/common/transition/transition";
 
 const Page = () => {
 	return (
@@ -113,7 +112,7 @@ const Page = () => {
 					<Link href={"/eventregistration/registration/codegolf"}>
 						<EventCard
 							imgUrl={"/EventPageImg/Super Coder.jpg"}
-							eventName={"CODE GOLF"}
+							eventName={"SUPER CODER"}
 							details={
 								"How well is your Code Efficiency in terms of Code Shortening and Modifying? If juggling with varying code redundancy, length and dimension si your thing, then buddy,pick acode, trim it down!"
 							}

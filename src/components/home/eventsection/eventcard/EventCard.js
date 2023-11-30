@@ -3,9 +3,9 @@ import styles from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-const EventCard = ({ posterUrl, characterUrl, eventName }) => {
+const EventCard = ({ posterUrl, characterUrl, eventName,link }) => {
 	return (
-		<Link href="#">
+		<Link href={link}>
 			<div className={styles.card}>
 				<div className={styles.wrapper}>
 					<Image

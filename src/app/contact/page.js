@@ -2,9 +2,6 @@
 import React, { useState } from "react";
 import "./style.scss";
 import emailjs from "@emailjs/browser";
-// import WithTransition from "@/components/common/transition/transition";
-import StarsCanvas from "@/components/common/starbackground/StarBackground";
-import CustomCursor from "@/components/common/customCursor/CustomCursor";
 import Footer from "@/components/common/footer/Footer";
 
 function Page() {
@@ -45,10 +42,7 @@ function Page() {
 	};
 
 	return (
-		<>
-			<CustomCursor />
-			<StarsCanvas />
-			<section className="container">
+		<>			<section className="container">
 				<section className="contact-container flex lg:flex-row flex-col z-[8] gap-4">
 					<div className="lg:w-1/2 w-full flex flex-col gap-3">
 						<h3 className="text-white font-young text-2xl">

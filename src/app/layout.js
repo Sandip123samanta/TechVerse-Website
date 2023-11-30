@@ -8,7 +8,7 @@ import SmoothScroll from "@/components/utils/SmoothScroll";
 
 export const metadata = {
 	title: "TechVerse2.0",
-	description: "",
+	description: "Unlesh The TechVerse.",
 };
 
 export default function RootLayout({ children }) {

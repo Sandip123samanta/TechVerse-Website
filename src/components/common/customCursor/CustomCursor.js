@@ -46,7 +46,7 @@ const CustomCursor = () => {
 
   return (
     <div className='cursor' ref={cursorRef}>
-      <Image src={rocket} width={100} alt='rocket' />
+      <Image src={rocket} width={150} alt='rocket' />
     </div>
   );
 };

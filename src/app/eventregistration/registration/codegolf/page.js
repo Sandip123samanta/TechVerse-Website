@@ -109,11 +109,11 @@ const Page = () => {
 
 	return (
 		<div className="h-screen w-screen md:h-auto md:flex gap-20 justify-center items-center md:mt-24">
-			<Contact params={contactDetails} rules={rules} imgUrl={"/Super Coder.jpg"}/>
+			<Contact params={contactDetails} rules={rules} imgUrl={"/EventPageImg/Super Coder.jpg"}/>
 			<div className="flex items-center justify-center text-black font-roboto">
 				<div className="bg-white p-8 rounded shadow-md w-[30rem]">
 					<h1 className="text-3xl font-semibold text-center mb-4">
-						Code Golf
+						Super Coder
 					</h1>
 					<form onSubmit={handleForm}>
 						<div className="mb-4">

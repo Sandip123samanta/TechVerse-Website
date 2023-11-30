@@ -1,18 +1,16 @@
-"use client"
-import { useEffect } from 'react';
-import React from 'react'
+"use client";
+import { useEffect } from "react";
+import React from "react";
 
 const SmoothScroll = () => {
-    useEffect(() => {
+	useEffect(() => {
 		(async () => {
 			const LocomotiveScroll = (await import("locomotive-scroll"))
 				.default;
 			const locomotiveScroll = new LocomotiveScroll();
 		})();
 	}, []);
-  return (
-    <></>
-  )
-}
+	return <></>;
+};
 
-export default SmoothScroll
+export default SmoothScroll;
