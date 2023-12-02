@@ -28,7 +28,7 @@ function page() {
           from_name: form.name,
           to_name:'TechVerse Team',
           from_email: form.email,
-          to_email: 'samanthasandip565@gmail.com',
+          to_email: 'techverse.techfestofficial@gmail.com',
           message: form.message,
           phone: form.phone
         },
