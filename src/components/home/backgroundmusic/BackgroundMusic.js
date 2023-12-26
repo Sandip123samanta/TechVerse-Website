@@ -26,7 +26,7 @@ const BackgroundMusic = () => {
       <button className="overflow-hidden relative md:w-32 md:h-32 w-36 h-36" onClick={toggleAudio}>
         <Image className='w-full h-full object-cover top-0 bottom-0' src={`${isPlaying ? '/playpause.gif' : '/pause.png'}`} alt='playpause button' fill={true}/>
       </button>
-      <audio id="background-music" autoPlay loop>
+      <audio id="background-music" loop>
         <source src={audioUrl} type="audio/mp3" />
       </audio>
     </div>
