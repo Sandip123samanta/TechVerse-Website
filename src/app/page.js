@@ -1,15 +1,16 @@
-"use client";
-import { useEffect, useState } from "react";
-import AboutSection from "@/components/home/aboutsection";
-import Hero from "../components/home/blackhole/Hero";
-import PreLoader from "../components/home/preloader";
-import { AnimatePresence } from "framer-motion";
-import TimerSection from "@/components/home/countdown";
-import Gallery from "../components/home/gallery/index";
-import EventSection from "@/components/home/eventsection";
-import AboutFooter from "@/components/aboutpage/aboutfooter/index";
-import Sponsers from "@/components/home/sponsor/Sponsor";
-import Footer from "@/components/common/footer/Footer";
+'use client';
+import { useEffect, useState } from 'react';
+import AboutSection from '@/components/home/aboutsection';
+import Hero from '../components/home/blackhole/Hero';
+import PreLoader from '../components/home/preloader';
+import { AnimatePresence } from 'framer-motion';
+import TimerSection from '@/components/home/countdown';
+import Gallery from '../components/home/gallery/index';
+import EventSection from '@/components/home/eventsection';
+import AboutFooter from '@/components/aboutpage/aboutfooter/index';
+import Sponsers from '@/components/home/sponsor/Sponsor';
+import Footer from '@/components/common/footer/Footer';
+import Tshirt from '@/components/home/merchendise/index';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,7 +18,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-      document.body.style.cursor = "default";
+      document.body.style.cursor = 'default';
       window.scrollTo(0, 0);
     }, 2000);
   }, []);
@@ -34,6 +35,7 @@ export default function Home() {
           <AboutSection />
           <EventSection />
           <Gallery />
+          <Tshirt />
           <Sponsers />
           <AboutFooter />
           <Footer />
