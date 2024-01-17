@@ -43,7 +43,7 @@ function index() {
 
             <ambientLight intensity={5} />
             <group position={[0, -1.2, 0]}>
-              <Suspense fallback={<Loading />}>
+              <Suspense fallback={null}>
                 <Model />
               </Suspense>
             </group>
@@ -55,7 +55,3 @@ function index() {
 }
 
 export default index;
-
-function Loading() {
-  return <h4 className="text-white text-xl">Merch is Loading</h4>;
-}
